@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Set an attribute</name>
+    <id>org.inkscape.extension.set_attribute</id>
+    
+    <param name="attribute_name" type="string" gui-text="The attribute name"/>
+    <param name="attribute_value" type="string" gui-text="The attribute value"/>
+    
+    <effect>
+          <object-type>path</object-type>
+          <effects-menu>
+              <submenu name="Set an attribute..."/>
+          </effects-menu>
+    </effect>
+
+    <script>
+        <command location="inx" interpreter="python">set_attribute.py</command>
+    </script>
+
+</inkscape-extension>
+
+
